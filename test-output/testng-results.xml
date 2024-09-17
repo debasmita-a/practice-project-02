@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-16T14:09:24 IST" name="Default suite" finished-at="2024-09-16T14:09:29 IST" duration-ms="5310">
+  <suite started-at="2024-09-16T14:47:45 IST" name="Default suite" finished-at="2024-09-16T14:47:52 IST" duration-ms="6649">
     <groups>
     </groups>
-    <test started-at="2024-09-16T14:09:24 IST" name="Default test" finished-at="2024-09-16T14:09:29 IST" duration-ms="5310">
+    <test started-at="2024-09-16T14:47:45 IST" name="Default test" finished-at="2024-09-16T14:47:52 IST" duration-ms="6649">
       <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginPageTest@1aafa419]" started-at="2024-09-16T14:09:24 IST" name="setup" finished-at="2024-09-16T14:09:29 IST" duration-ms="4651" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:45 IST" name="setup" finished-at="2024-09-16T14:47:50 IST" duration-ms="4501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getPageURL()[pri:0, instance:tests.LoginPageTest@1aafa419]" started-at="2024-09-16T14:09:29 IST" name="getPageURL" finished-at="2024-09-16T14:09:29 IST" duration-ms="624" status="PASS">
+        <test-method signature="getPageURL()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:50 IST" name="getPageURL" finished-at="2024-09-16T14:47:51 IST" duration-ms="640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPageURL -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginPageTest@1aafa419]" started-at="2024-09-16T14:09:29 IST" name="teardown" finished-at="2024-09-16T14:09:29 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:51 IST" name="teardown" finished-at="2024-09-16T14:47:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:51 IST" name="setup" finished-at="2024-09-16T14:47:51 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="isAppointmentbtnAvailableTest()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:51 IST" name="isAppointmentbtnAvailableTest" finished-at="2024-09-16T14:47:51 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isAppointmentbtnAvailableTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:51 IST" name="teardown" finished-at="2024-09-16T14:47:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:51 IST" name="setup" finished-at="2024-09-16T14:47:51 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:51 IST" name="loginTest" finished-at="2024-09-16T14:47:52 IST" duration-ms="980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginPageTest@48f2bd5b]" started-at="2024-09-16T14:47:52 IST" name="teardown" finished-at="2024-09-16T14:47:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

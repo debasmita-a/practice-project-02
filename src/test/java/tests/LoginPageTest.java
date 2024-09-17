@@ -19,4 +19,12 @@ public final class LoginPageTest extends BaseTest{
 		String url = loginPage.clickOnToggleMenuBtn().clickLoginLink().getPageURL();
 		Assert.assertTrue(url.contains("login"));
 	}
+	
+	@Test
+	public void loginTest() {
+		loginPage.clickOnToggleMenuBtn().clickLoginLink().enterUsername("John Doe")
+		.enterPassword("ThisIsNotAPassword").clickLoginBtn();
+		String url = loginPage.getPageURL();
+		Assert.assertTrue(url.contains("appointment"));
+	}
 }

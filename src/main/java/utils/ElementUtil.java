@@ -1,10 +1,13 @@
 package utils;
 
 import java.time.Duration;
+import java.util.function.Consumer;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public final class ElementUtil {
@@ -60,5 +63,22 @@ public final class ElementUtil {
 	public void doSendKeys(By locator, String keys, int timeout) {
 		new WebDriverWait(driver, Duration.ofSeconds(timeout)).until(
 				ExpectedConditions.presenceOfElementLocated(locator)).sendKeys(keys);
+	}
+	
+	public void selectValueFromDropdown(By locator, String textValueIndex, String strategy) {
+		Select select = new Select(driver.findElement(locator));
+		if(strategy.equalsIgnoreCase("text")) {
+			select.selectByVisibleText(textValueIndex);
+		}else if(strategy.equalsIgnoreCase("value")) {
+			select.selectByValue(textValueIndex);
+		}else if(strategy.equalsIgnoreCase("option")) {
+			select.deselectByIndex(Integer.parseInt(textValueIndex));
+		}else {
+			System.out.println("Invalid select strategy.");
+		}
+	}
+	
+	public void selectValueFromDropdown(Consumer<Select> consumer, WebElement element) {
+		consumer.accept(new Select(element));
 	}
 }

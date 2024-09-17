@@ -18,6 +18,10 @@ public final class LoginPage {
 	private static final By btn_aapointment = By.id("btn-make-appointment");
 	private static final By btn_toggle = By.id("menu-toggle");
 	private static final By link_login = By.linkText("Login");
+	private static final By text_username = By.id("txt-username");
+	private static final By text_password = By.id("txt-password");
+	private static final By btn_login = By.id("btn-login");
+	
 	
 	public boolean isAppointmentbtnAvailable() {		
 		return util.isElementPresent(btn_aapointment);
@@ -37,16 +41,19 @@ public final class LoginPage {
 		return util.getPageURL();
 	}
 	
-	public void enterUsername(String username) {
-		
+	public LoginPage enterUsername(String username) {
+		util.doSendKeys(text_username, username);
+		return this;
 	}
 	
-	public void enterPassword(String password) {
-		
+	public LoginPage enterPassword(String password) {
+		util.doSendKeys(text_password, password);
+		return this;
 	}
 	
-	public void clickLoginBtn() {
-		
+	public AppointmentPage clickLoginBtn() {
+		util.doClick(btn_login);
+		return new AppointmentPage(driver);
 	}
 	
 }
