@@ -19,8 +19,8 @@ public final class ExcelUtil {
 	public List<Map<String, String>> getData(String sheetName) {
 		List<Map<String, String>> list = null;
 		
-		try {
-			FileInputStream excelfile = new FileInputStream("");
+		try(FileInputStream excelfile = new FileInputStream("")) {
+
 			try (XSSFWorkbook workbook = new XSSFWorkbook(excelfile)) {
 				XSSFSheet sheet = workbook.getSheet(sheetName);
 				

@@ -42,7 +42,7 @@ public final class Driver {
 		return DriverManager.getDriver();
 	}
 	
-	public void quit_driver() {
+	public static void quit_driver() {
 		if(Objects.nonNull(DriverManager.getDriver())) {
 			DriverManager.getDriver().quit();
 			DriverManager.unload();

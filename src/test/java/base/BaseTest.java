@@ -10,6 +10,8 @@ import utils.PropertiesReader;
 
 public class BaseTest {
 	
+	protected BaseTest() {}
+	
 	protected WebDriver driver;
 	protected LoginPage loginPage;
 	
@@ -21,7 +23,7 @@ public class BaseTest {
 	
 	@AfterMethod
 	public void teardown() {
-		
+		Driver.quit_driver();
 	}
 	
 }
